@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200&family=Hahmlet:wght@300&family=Orbitron:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200&family=Hahmlet:wght@300&family=Orbitron:wght@500;600&family=Purple+Purse&display=swap" rel="stylesheet">
+    <script src="script/inicio.js"></script>
+    <title>VIPS</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <label for = "btn-menu-open" class="icono-menu"> ☰</label>
+    </div>
+    <input type="checkbox" id="btn-menu-open" aria-label="Abrir menú">
+    <div class ="container-menu">
+      <div class = "cont-menu">
+        <nav>
+          <a href="#promociones">Promociones</a>
+          <a href=reserva.html>Reservar</a>
+          <a href="carrito_vips.html">Pedido a domicilio</a>
+          <a href="carta_vips.html">Carta</a>
+          <a href="login.html">Iniciar sesión</a>
+          <a href="register.html">Registro de usuarios</a>
+        </nav>
+        <label for="btn-menu-close" class="icon-equis">✖️</label>
+      </div>
+    </div>
+    <input type="checkbox" id="btn-menu-close">
+    <div class="navbar">
+      <img src="images/img/VIPS-1.png" alt="">
+      <div class="navbar-inner">
+        <a href=#promociones>Promociones</a>
+        <a href=reserva.html >Reservar</a>
+        <a href="carrito_vips.html">Pedido a domicilio</a>
+        <a href="carta_vips.html">Carta</a>
+        <a href="login.html">Iniciar sesión</a>
+        <a href="register.html">Registro de usuarios</a>
+      </div>
+    </div>
+    <section class="portada">
+      <section class="video">
+        <video autoplay muted loop>
+          <source src = "images/video/tortitas.mp4" type = "video/mp4">
+          Tu navegador no soporta el elemento video
+        </video>
+      </section>
+    </section>     
+    <section class="inicio">
+      <img class = "flecha" src="images/img/flechas.png" alt="flecha1">
+      <img class = "flecha" src="images/img/flechas.png" alt="flecha2">
+      <h3>¡Hay más aquí abajo! ;)</h3>
+    </section>
+
+    <section class="pagina1"> 
+      <div class="reservar">
+        <img src="images/img/vips-mesa-1.png" alt="foto2">
+        <a href="reserva.html" class="boton">
+          RESERVA MESA
+        </a>
+      </div>    
+      <div class="pedir">
+        <img src="images/img/pedir-1.png" alt="foto1">
+        <a href="carrito_vips.html" class="boton">HACER PEDIDO</a>
+      </div> 
+    </section>
+    <section class="pagina2" id="promociones">
+        <img src="images/img/vips_promo-1.png" alt="foto3">
+    </section>
+
+    <section class="novedades">
+      <h2>NUESTRAS NOVEDADES</h2>
+      <h3>¡No te pierdas nuestros platos atípicos!</h3>
+      <div class="platos">
+        <div class="plato1">
+          <img src="images/img/plato2222.png" alt="foto5">
+          <div class="overlay">
+            <p>Carbonara de Soria</p>
+            <a href="carrito_vips.html" class="boton-pedir">Pedir ahora</a>
+          </div>
+        </div>
+        <div class="plato2">
+          <img src="images/img/plato1.png" alt="foto4">
+          <div class="overlay">
+            <p>VIPS Wellington</p>
+            <a href="carrito_vips.html" class="boton-pedir">Pedir ahora</a>
+          </div>
+        </div>
+        <div class="plato3">
+          <img src="images/img/plato3.png" alt="foto6">
+          <div class="overlay">
+            <p>Albóndigas ibéricas</p>
+            <a href="carrito_vips.html" class="boton-pedir">Pedir ahora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="locales">
+      <h2>NUESTROS LOCALES</h2>
+      <div class="grid-container">
+        <div class="item1">
+          <img src="images/img/collage1.png" alt="foto7">
+        </div>
+        <div class="item2">
+          <p>Tenemos locales en muchas ciudades de España. ¡Seguro que hay uno cerca de ti!</p>
+        </div>      
+        <div class="item3">
+          <img src="images/img/collage2.png" alt="foto8">
+        </div>
+        <div class="item4">
+          <img src="images/img/collage3.png" alt="foto9">
+        </div>
+      </div>
+      <div class="text-container">
+        <p>Tenemos locales en muchas ciudades de España. ¡Seguro que hay uno cerca de ti!</p>
+      </div>
+      <div class="container-carousel">
+        <div class="carruseles" id="slider">
+            <div class="slider-section">
+                <img id= "img8" src="images/img/collage1.png" alt="collage1">
+            </div>
+            <div class="slider-section">
+                <img id = "img9" src="images/img/collage2.png" alt="collage2">
+            </div>
+            <div class="slider-section">
+                <img id = "img10" src="images/img/collage3.png" alt="collage3">
+            </div>
+        </div>
+        <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
+        <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+    </div>
+    </section>
+
+    <section class="club">
+      <h2>ÚNETE AL CLUB VIPS</h2>
+      <div class="app">
+        <div class="descargar">
+          <p>¿Todavía no eres socio?
+            ¡Descárgate la App y disfrutas de una gran variedada de promociones y descuenptos!</p>
+          <img src="images/img/Captura2.PNG" alt="foto11">
+          <img src="images/img/samsung.png" alt="foto10">
+          <p>
+          <label for = "comentarios">Nos importa tu opinión, ¡deja tu comentario!</label>
+          </p>
+          <textarea id="comentarios" name="comentarios" maxlength="100"></textarea>
+          <input class="boton-comentario" type="button" value="Enviar" id="enviarComentarioButton">
+          
+        </div>
+
+        <div class="movil">
+          <img src="images/img/movil.png" alt="movil">
+        </div>
+      </div>
+      <div class="reseñas">
+          <h3>Reseñas:</h3>
+          <div id="comentariosGuardados"></div>
+      </div>
+      
+    </section>
+  
+    <footer class="footer">
+      <div>
+          <div>Síguenos</div>
+          <div class="imagenes">
+              <a href="https://www.instagram.com/envips/" target="_blank" rel="noopener noreferrer">
+                  <img src="images/img/instagram-1.PNG" alt="instagram">
+              </a>
+              <a href="https://www.facebook.com/vips?ref=ts" target="_blank" rel="noopener noreferrer">
+                  <img src="images/img/facebook-1.PNG" alt="facebook">
+              </a>
+              <a href="https://twitter.com/vips" target="_blank" rel="noopener noreferrer">
+                  <img src="images/img/twitter.PNG" alt="twitter">
+              </a>
+              <img src="images/img/youtube-1.PNG" alt="youtube">  
+          </div>
+      </div>
+      <div style="margin-left: auto;">
+          <a href="https://www.vips.es/atencion-al-cliente" class="text-wrapper">Atención al cliente
+          </a>  
+      </div>
+    </footer>
+  </body>
+</html>

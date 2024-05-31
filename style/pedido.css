@@ -1,0 +1,851 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #F9F6EF;
+    --color-rojo: #dd1b2d;
+    --color-blanco: #ffffff;
+    --color-shadow: #00000040;
+    --color-blanco-sucio: #f9f6ef;
+    --border-radius: 10px;
+    min-height: 120vh;
+}
+
+
+.pestaña{
+    width:100%;
+    overflow: hidden;
+}
+/*HEADER*/
+.navbar {
+    position: fixed;
+    background-color: var(--color-rojo);
+    width: 100%;
+    height: 8%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.navbar img {
+    float: left;
+    width: 20%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.navbar a, .navbar label {
+    text-shadow: 0px 4px 4px var(--color-shadow);
+    font: "Hahmlet-Black", "Hahmlet";
+    font-weight: 900;
+    position: relative;
+    left: 54%; 
+    top: 2%;
+    color: var(--color-blanco);
+    font-size: 2vw;
+    margin-top: 2%;
+    margin-right: 2%;
+    color: #fff;
+    font-family: 'Optima';
+}
+
+.menu-oculto {
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: visibility 0s, max-height 0.5s ease-out;
+}
+
+#menu-carrito {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #dd1b2d;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index:2;
+}
+
+#menu-carrito.menu-visible {
+    width: 500px;
+    max-height: 1000px;
+    z-index:2;
+}
+
+
+.migasdepan {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 6.7%;
+    z-index: 2;
+}
+
+/*CARRITO-HEADER*/
+.contenedor-boton-carrito{
+    width: 120%;
+    margin-top: 6%;
+    margin-left: 27%;
+}
+
+#productos-carrito{
+    margin-top: 40%;
+    background-color: white;
+    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.texto-producto .precio-producto{
+    font-size: 30px;
+    color:#dd1b2d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.tituloCarrito{
+    position: relative;
+    top:16%;
+    z-index:4;
+    color:#ffffff;
+    justify-content: center;
+    margin-left: 25%;
+}
+.total-oculto {
+    visibility: hidden;
+    transition: visibility 0s 0.001s;
+}
+
+#total-carrito {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #dd1b2d;
+    color: #ffffff;
+    font-size: 2em;
+    padding: 10px;
+    z-index: 3;
+}
+
+#total-carrito.total-visible {
+    visibility: visible;
+}
+
+/*ALERGENOS*/
+#alergenos{
+    min-height: 70vh;
+}
+
+#alergenossel{
+    width: 13%;
+}
+.contenedor-alergias-sel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; 
+    margin-top: 10%;
+    width:100%;
+}
+.contenedor-alergias-sel img{
+    width: 20%;
+}
+
+
+.oculto {
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+
+/*PASO1*/
+.paso {
+    display: none;
+}
+
+.paso.mostrar {
+    display: block;
+}
+
+.tituloPaso1 {
+    text-align: center;
+    margin-top: 12%;
+    font-family: 'Optima';
+    font-size: 27px;
+    color: #dd1b2d;
+}
+
+.contenedor-mp {
+    display: flex;
+    flex: left;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    left: 0;
+    right: 0;
+}
+
+
+.contenedor-migas {
+    border: 6px solid #dd1b2d;
+    text-align: center;
+    padding:20px;
+    width: 33%;
+    background-color: #fff;
+
+}
+
+a {
+    font-family: "Hahmlet-Bold", Helvetica;
+    width: 100%;
+    height: auto;
+    color: #dd1b2d;
+}
+
+.descripcion {
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 100%;
+    font-family: 'Optima';
+    font-size: 20px;
+    color: #504f4f;
+}
+
+.contenedor-titulos{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.titulo-apartado{
+    width: 20%;
+    font-size: 24px;
+    font-family: 'Optima';
+    text-align: center;
+    color:#dd1b2d;
+    background-color: #F9F6EF;
+    border: 8px solid #dd1b2d;
+}
+
+.contenedor-producto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#contenedor-postres {
+    margin-bottom: 7%;
+}
+
+.contenedor-boton-info,
+.contenedor-boton-pago {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 7%;
+}
+
+.producto {
+    border: 20px solid #fff;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 100%; 
+}
+
+.img-container-product {
+    position: relative;
+}
+
+.img-container-product .precio-producto {
+    position: absolute;
+    top: 80%;
+    left: 85%;
+    z-index: 1;
+    font-size: 20px;
+    color: #dd1b2d;
+}
+
+.producto h2 {
+    color: #dd1b2d;
+    margin-top: 0%;
+}
+
+.nombre-producto {
+    border-bottom: 7px solid #dd1b2d;
+}
+
+.producto img {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.descripcion-producto {
+    font-size: 20px;
+    color: #504f4f;
+    font-family: "Secular One";
+}
+
+
+/*PASO1 KENTUCKY*/
+
+.producto-kentucky{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:93%;
+    border: 20px solid #dd1b2d;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.producto-kentucky .imagen-producto {
+    width: 50%;
+}
+
+.imagen-producto img{
+   width: 100%;
+   margin-left:2%;
+}
+
+.producto-kentucky .texto-producto {
+   width: 35%;
+   margin-right: 5%;
+}
+.nombre-productokn {
+    border-bottom: 7px solid #dd1b2d;
+    margin-top: 4%; 
+}
+
+.contenedor-descr{
+    display: flex;
+    width: 35%;
+    margin-left: 60%; 
+    margin-top:-9%;
+
+}
+
+
+/*PASO2*/
+
+#paso2 {
+    left: 0;
+    right: 0;
+    height: 130vh;
+    overflow: hidden;
+}
+
+#paso2_2 {
+    left: 0;
+    right: 0;
+    height: 150vh;
+    flex-direction: column;
+}
+
+.columna-titulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #dd1b2d;
+    font-size: 19px;
+    margin-top: 3%;
+    width: 100%;
+}
+
+.contenedor-paso2 {
+    text-align: center;
+    width:30%;
+}
+
+#boton-insertar, #boton-pago3,#boton-pago4{
+    margin-left: 35%;
+}
+
+.campo-entrada {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+
+.campo-entrada:hover {
+    border: 2px solid#dd1b2d;
+}
+
+/*PASO3*/
+
+#boton-pago3{
+    margin-bottom: 7%;
+}
+
+.contenedor-boton-paso3{
+    margin-top: 10%;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin-left:42%;
+}
+
+#paso3{
+    height:70vh;
+}
+#boton-inicio{
+    margin-bottom: 4%;
+}
+
+.producto-boton {
+    width: 25%;
+    margin:2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.producto-botonvuelta{
+    width: 90%;
+    margin:5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#boton-pago{
+    margin-bottom: 7%;
+}
+
+
+.titulovuelta{
+    justify-content: left;
+    font-family: 'Optima';
+    font-size: 27px;
+    color: #dd1b2d;
+    margin-left: 2%;
+    border-bottom: 7px solid #dd1b2d;
+
+}
+.imagen-alergenos {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+/*Infantil*/
+.descripcion-producto-inf{
+    font-size: 20px;
+    color: #504f4f;
+    font-family: "Secular One";
+    justify-content: center;
+}
+.contenedor-infantil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.precio-producto-inf{
+    font-size: 20px;
+    color:#dd1b2d
+}
+.contenedor-menuinf {
+    border: 20px solid #dd1b2d;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 60%;
+    position: relative;
+}
+
+.contenedor-menuinf img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+#titulo-apartado-inf {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid #dd1b2d;
+}
+
+.boton-sel{
+    width: 42%;
+}
+
+/*BOTONES*/
+.boton {
+    width: 25%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: 2px solid var(--color-blanco);
+    cursor: pointer;
+    font: "Hahmlet-Black", "Hahmlet";
+    background: var(--color-rojo);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.eliminar-producto{
+    float: right;
+}
+.producto-carrito {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nombre-producto {
+    flex-grow: 1;
+}
+
+.eliminar-producto {
+    background-color: #dd1b2d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+.boton:hover {
+    color: var(--color-rojo);
+    border: 2px solid var(--color-rojo);
+    background: var(--color-blanco-sucio);
+}
+
+.boton:active {
+    transform: scale(0.9);
+}
+.boton2 {
+    width: 25%;
+    padding: 1rem 3rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: 2px solid var(--color-blanco);
+    cursor: pointer;
+    font: "Hahmlet-Black", "Hahmlet";
+    background: var(--color-rojo);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+#boton-menuanadir{
+    margin-left: 33%;
+    margin-bottom: 4%;
+    margin-top: 3%;
+}
+
+.boton2:hover {
+    color: var(--color-rojo);
+    border: 2px solid var(--color-rojo);
+    background: var(--color-blanco-sucio);
+}
+
+.boton2:active {
+    transform: scale(0.9);
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    background-color: var(--color-rojo);
+    font-family: "Hahmlet-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--color-blanco);
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer img {
+    margin-left: 15px;
+}
+
+.footer .text-wrapper {
+    font-family: "Hahmlet-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--color-blanco);
+    font-size: 18px;
+    width:100%;
+}
+
+.imagenes {
+    display: flex;
+}
+
+@media only screen and (max-width: 1120px) {
+
+    .contenedor-descr{
+        margin-top: -3%;
+    }
+    #boton-menuanadir{
+        margin-left: 30%;
+        margin-bottom: 4%;
+        margin-top: 3%;
+    }
+
+    #paso3titulo{
+        margin-top:20%;
+    }
+    .boton2{
+    width: 35%;}
+
+    #titulo-apartado-inf {
+        top: 30%;
+        left: 55%;
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .producto-boton {
+        width: 35%;
+    }
+    #comida_titulo{
+        margin-top: 20%;
+    }
+    #titulopago{
+        margin-top: 20%;
+    }
+
+
+    #boton-menuanadir{
+        margin-left: 30%;
+        margin-bottom: 4%;
+        margin-top: 3%;
+    }
+
+    #menuinf_titulo{
+        margin-top: 20%;
+    }
+
+    #paso3titulo{
+        margin-top:20%;
+    }
+    .contenedor-descr{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    #contenedor-postres {
+        margin-bottom: 10%;
+    }
+    #titulo-apartado-inf {
+        top: 30%;
+        left: 57%;
+        width: 35%;
+    }
+    .columna-titulos {
+        flex-direction: column;
+    }
+
+
+    .campo-entrada{width: 150%;}
+
+    #paso2_2{
+        height:130vh;
+
+    }
+    .navbar img {
+        width: 20%;
+    }
+
+    .campo-entrada{width: 190%;}
+    .contenedor-paso2{margin-left: 25%;}
+    #info-titulo{
+        margin-top: 20%;
+    }
+    #alergias-titulo{
+        margin-top: 20%;
+    }
+}
+@media only screen and (max-width: 790px) {
+    .producto-boton {
+        width: 30%;
+    }
+}
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 768px) {
+    .navbar img {
+        width: 40%;
+    }
+
+    .contenedor-alergias-sel {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 5%;
+    }
+    .contenedor-alergias-sel img{
+        width: 40%;
+    }
+
+    #alergenossel{
+        width: 22%;
+    }
+    #alergenos{
+        min-height: 170vh;
+    }
+    
+
+    #comida_titulo{
+        margin-top: 25%;
+    }
+    #titulopago{
+        margin-top: 25%;
+    }
+
+
+    #boton-menuanadir{
+        margin-left: 21%;
+        margin-bottom: 4%;
+        margin-top: 3%;
+    }
+
+    .contenedor-titulos{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+    .titulo-apartado{
+        width: 40%;
+        font-size: 24px;
+        font-family: 'Optima';
+        text-align: center;
+        color:#dd1b2d;
+        background-color: #F9F6EF;
+        border: 8px solid #dd1b2d;
+    }
+    
+    .contenedor-menuinf {
+        width: 90%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .contenedor-menuinf img{
+        width: 90%;
+        padding: 0px;
+        margin: 0px;
+    }
+    #paso3titulo{
+        margin-top:40%;
+    }
+
+    .navbar a, .navbar label {
+        font-size: 16px;
+        margin-right: 0;
+        left: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .text-wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #paso2_2{
+        height:140vh;
+
+    }
+    #boton-sel{
+        width: 55%;
+    }
+    .producto-boton {
+        width: 50%;
+    }
+    .producto-kentucky {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+    .producto-kentucky .imagen-producto {
+        width: 95%;
+    }
+    .producto-kentucky .texto-producto {
+        width: 100%;
+        margin-right: 0%;
+    }
+    #contenedor-postres {
+        margin-bottom: 16%;
+    }
+    #boton-pago3,#boton-pago4{width: 40%;
+    margin-left: 25%;}
+    #menuinf_titulo{
+        margin-top: 20%;
+    }
+    #info-titulo{
+        margin-top: 25%;
+    }
+    .navbar-inner{
+        margin-left: 60%;
+    }
+    .navbar-inner a,.navbar-inner label{
+        font-size: 20px;
+    }
+    #alergias-titulo{
+        margin-top: 25%;
+    }
+}
+@media only screen and (max-width: 608px) {
+    #comida_titulo{
+        margin-top: 35%;
+    }
+    #contenedor-postres {
+        margin-bottom: 26%;
+    }
+    #titulopago{
+        margin-top: 35%;
+    }
+    .contenedor-alergias-sel img{
+        width: 50%;
+        margin-bottom: 7%;
+    }
+    #menuinf_titulo{
+        margin-top: 35%;
+    }
+    #info-titulo{
+        margin-top: 35%;
+    }
+    .navbar-inner{
+        margin-left: 55%;
+    }
+    #alergias-titulo{
+        margin-top: 35%;
+    }
+}

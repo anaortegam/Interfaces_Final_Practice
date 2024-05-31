@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Alberto, Belen, Luis y Ana">
+        <title>Carta_Vips</title>
+        <link rel="stylesheet" href="style/carta.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+        <link rel="icon" href="images/images/img/logo.jpg" type="image/jpg">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="script/carta.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <label for="btn-menu-open" class="icono-menu"> ☰</label>
+        </div>
+        <input type="checkbox" id="btn-menu-open" aria-label="Abrir menú">
+        <div class ="container-menu">
+            <div class = "cont-menu">
+                <nav>
+                    <a href=reserva.html>Reservar</a>
+                    <a href="carrito_vips.html">Pedido a domicilio</a>
+                    <a href="login.html">Iniciar sesión</a>
+                    <a href="register.html">Registro de usuarios</a>
+                    <a href="inicio.html">Inicio</a>
+                </nav>
+                <label for="btn-menu-close" class="icon-equis">✖️</label>
+            </div>
+        </div>
+        <input type="checkbox" id="btn-menu-close">
+        <div class="navbar">
+            <img src="images/img/VIPS-1.png" alt="">
+            <div class="navbar-inner">
+                <a href=reserva.html>Reservar</a>
+                <a href="carrito_vips.html">Pedido a domicilio</a>
+                <a href="login.html">Iniciar sesión</a>
+                <a href="register.html">Registro de usuarios</a>
+                <a href="inicio.html">Inicio</a>
+            </div>
+        </div>
+    <main>
+        <section class="paso mostrar" id="paso1">
+            <h1 id="nuestra_carta" class="tituloPaso1">Nuestra Carta</h1>
+            <p class="descripcion">¡LO MEJOR DEL VIPS!</p>
+            <div class="contenedor-titulos">
+                <h6 class="titulo-apartado">Entrantes.</h6>
+            </div>
+            <div class="contenedor-producto">
+                <div class="producto" data-nombre-producto="Quesadilla.">
+                    <div class="img-container-product">
+                        <img src="images/img/quesadilla.jpg" alt="Quesadilla.">
+                        <p class="precio-producto">7€</p>
+                    </div>
+                    <h2 class="nombre-producto">Quesadilla.</h2>
+                    <p class="descripcion-producto">Dos tortillas de harina de trigo, jamón York, queso Cheddar fundido, pico de gallo, crema.</p>
+                </div>
+
+                <div class="producto" data-nombre-producto="Nachos Tex Mex.">
+                    <div class="img-container-product">
+                        <img src="images/img/nachos.jpg" alt="Nachos Tex Mex.">
+                        <p class="precio-producto">6€</p>
+                    </div>
+                    <h2 class="nombre-producto">Nachos Tex Mex.</h2>
+                    <p class="descripcion-producto">Nachos de maíz, mezcla de quesos, cebolla roja, chorizo picado, chiles jalapeños, cilantro y crema agria.</p>
+                </div>
+              
+                <div class="producto" data-nombre-producto="Alitas Chilli BBQ.">
+                    <div class="img-container-product">
+                        <img src="images/img/alitas.png" alt="Alitas Chilli BBQ.">
+                        <p class="precio-producto">9€</p>
+                    </div>
+                    <h2 class="nombre-producto">Alitas Chilli BBQ.</h2>
+                    <p class="descripcion-producto">Alitas de pollo marinadas en salsa BBQ Chipotle y salsa sweet chili sobre patatas fritas, acompañadas de salsa ranch.</p>
+                </div>
+            </div>
+            <div class="contenedor-titulos">
+                <h6 class="titulo-apartado">Sandwiches</h6>
+            </div>
+            <div class="contenedor-producto">
+                <div class="producto" data-nombre-producto="Pastrami.">
+                    <div class="img-container-product">
+                        <img src="images/img/pastrami.jpg" alt="Pastrami.">
+                        <p class="precio-producto">12€</p>
+                    </div>
+                    <h2 class="nombre-producto">Pastrami.</h2>
+                    <p class="descripcion-producto">Pastrami de vacuno cocinado a baja temperatura estilo New York, queso cheddar ahumado y pimiento verde frito.</p>
+                </div>
+
+                <div class="producto" data-nombre-producto="CachoPower.">
+                    <div class="img-container-product">
+                        <img src="images/img/cachopower.jpg" alt="CachoPowerx.">
+                        <p class="precio-producto">13€</p>
+                    </div>
+                    <h2 class="nombre-producto">CachoPower.</h2>
+                    <p class="descripcion-producto">Cachopo relleno de carne, jamón serrano, queso y pimiento del piquillo, huevo frito, guindilla verde y  lechuga.</p>
+                </div>
+             
+                <div class="producto" data-nombre-producto=" Cubano.">
+                    <div class="img-container-product">
+                        <img src="images/img/cubano.jpg" alt=" Cubano.">
+                        <p class="precio-producto">12€</p>
+                    </div>
+                    <h2 class="nombre-producto">Cubano.</h2>
+                    <p class="descripcion-producto">Pulled pork, queso emmental y queso fundido, jamón cocido, mostaza, mayonesa y pepinillo, en pan maíz.</p>
+                </div>
+
+                <div class="producto" data-nombre-producto="VIPSClub.">
+                    <div class="img-container-product">
+                        <img src="images/img/VIPSClub.jpg" alt="VIPSClub.">
+                        <p class="precio-producto">10€</p>
+                    </div>
+                    <h2 class="nombre-producto">VIPSClub.</h2>
+                    <p class="descripcion-producto">Pan blanco o pan de semillas, tres pisos de pollo, bacon, jamón York, queso americano y queso, mayonesa, tomate y lechuga.</p>
+                </div>
+
+                <div class="producto" data-nombre-producto="Club Salmon.">
+                    <div class="img-container-product">
+                        <img src="images/img/salmon.png" alt="Club Salmon.">
+                        <p class="precio-producto">15€</p>
+                    </div>
+                    <h2 class="nombre-producto">Club Salmon.</h2>
+                    <p class="descripcion-producto">Pan rústico de cereales y semillas con salmón ahumado noruego, aguacate, tomate, cebolla roja, lechuga y salsa mostaza y miel.</p>
+                </div>
+                              
+                <div class="producto" data-nombre-producto="FundyClock.">
+                    <div class="img-container-product">
+                        <img src="images/img/oclock.png" alt="Fundy OClock.">
+                        <p class="precio-producto">7€</p>
+                    </div>
+                    <h2 class="nombre-producto">Fundy OClock.</h2>
+                    <p class="descripcion-producto">Pan rústico, jamón York, pavo cocido, huevos revueltos y queso Cheddar fundido. Complemento a elegir; patatas o aros de cebolla.</p>
+                </div>
+
+            </div>
+            <h5 class="titulovuelta">¡HA VUELTO!</h5>
+            <div class="producto-kentucky" data-nombre-producto="VIPSKentucky.">
+                <div class="imagen-producto">
+                    <img src="images/img/kentucky.jpg" alt="VIPSKentucky.">
+                </div>
+                <div class="texto-producto">
+                    <h2 class="nombre-producto">VIPSKentucky.</h2>
+                    <p class="precio-producto">20€</p>
+                    <p class="descripcion-producto">No podíamos dejarte con las ganas, y hemos traído de vuelta la especialidad de la casa, la joya de la corona, el manjar de ricos y energúmenos:</p>
+                </div>
+                <div class="contenedor-descr">
+                    <p class="descripcion-producto">Una combinación de carne de cerdo troceada y queso que, unido a la salsa secreta, lo convierte en el sándwich
+                        perfecto. Disfrutadlo mientras podáis.</p>
+                </div>
+            </div>
+            <h5 class="titulovuelta">MENU INFANTIL</h5>
+            <div class="contenedor-infantil">
+                <p class="descripcion-producto-inf">¡Para que los más peques tambien disfruten!</p>
+                <div class="contenedor-menuinf">
+                    <img src="images/img/menu_infantil.jpg" alt="Infantil.">
+                    <h6 id="titulo-apartado-inf" class="titulo-apartado">Menu Infantil.</h6>
+                </div>
+                <p class="descripcion-producto-inf">Haga click en el recuadro de menu infantil para poder verlo</p>
+                <p class="precio-producto-inf">10€</p>
+            </div>
+            <div class="contenedor-titulos">
+                <h6 class="titulo-apartado">Hamburguesas.</h6>
+            </div>
+            <div class="contenedor-producto">
+                <div class="producto" data-nombre-producto="LaBurratisimaa.">
+                    <div class="img-container-product">
+                        <img src="images/img/BURRATA.png" alt="LaBurratisimaa.">
+                        <p class="precio-producto">15€</p>
+                    </div>
+                    <h2 class="nombre-producto">La Burratisima.</h2>
+                    <p class="descripcion-producto">Carne de vacuno con cremosa burrata, paleta ibérica crujiente, pesto toscano, pomodoro seco, tomate, rúcula y mayonesa.</p>
+                </div>
+
+                <div class="producto" data-nombre-producto="Chic Chicken.">
+                    <div class="img-container-product">
+                        <img src="images/img/BBQ.png" alt="Chic Chicken.">
+                        <p class="precio-producto">14€</p>
+                    </div>
+                    <h2 class="nombre-producto">Chic Chicken BBQ.</h2>
+                    <p class="descripcion-producto">Pollo crujiente, salsa BBQ chipotle sobre tomate, lechuga, pepinillo y salsa baconesa en pan brioche tostado con dos sésamos.</p>
+                </div>
+                               
+                <div class="producto" data-nombre-producto="VeganBurguer.">
+                    <div class="img-container-product">
+                        <img src="images/img/VEGAN.jpg" alt="VeganBurguer.">
+                        <p class="precio-producto">17€</p>
+                    </div>
+                    <h2 class="nombre-producto">Vegan Burguer.</h2>
+                    <p class="descripcion-producto">Hamburguesa vegana de quinoa, zanahoria y puerro con aguacate, pimientos asados, salsa sweet chili y tomate.</p>
+                </div>
+
+            </div>
+            <div class="contenedor-titulos">
+                <h6 class="titulo-apartado">Postres.</h6>
+            </div>
+            <div id="contenedor-postres" class="contenedor-producto">
+                <div class="producto" data-nombre-producto="Choco&Caramel.">
+                    <div class="img-container-product">
+                        <img src="images/img/tartaa.png" alt="Choco&Caramel.">
+                        <p class="precio-producto">6€</p>
+                    </div>
+                    <h2 class="nombre-producto">Choco&Caramel.</h2>
+                    <p class="descripcion-producto">Esponjoso bizcocho con mousse de caramelo, crema de caramelo salado y recubierto de bombón.</p>
+                </div>
+
+                <div class="producto" data-nombre-producto="TortitasVIPS.">
+                    <div class="img-container-product">
+                        <img src="images/img/tortitas.png" alt="TortitasVIPS.">
+                        <p class="precio-producto">4€</p>
+                    </div>
+                    <h2 class="nombre-producto">Tortitas VIPS.</h2>
+                    <p class="descripcion-producto">Tortitas recién hechas con nata montada VIPS y sirope de chocolate, caramelo o fresa.</p>
+                </div>
+                                
+                <div class="producto" data-nombre-producto="Batidos.">
+                    <div class="img-container-product">
+                        <img src="images/img/batidos.png" alt="Batidos.">
+                        <p class="precio-producto">3€</p>
+                    </div>
+                    <h2 class="nombre-producto">Batidos Vips.</h2>
+                    <p class="descripcion-producto">Elige tu batido.</p>
+                    <p class="descripcion-producto">Chocolate, caramelo o fresa.</p>
+                </div>
+            </div>
+            <div class="contenedor-formulario">
+                <div class="imagen-formulario">
+                    <img src="images/img/formulario.png" alt="Formulario">
+                </div>
+                <div id="dishDisplay" >
+                    <img id="dishImage" src="." alt="Imagen del plato">
+                    <p id="dishName" class="tituloPaso1"></p>
+                </div>
+            
+                <form id="foodForm" action="#" class="contact" method="get">
+                    <div class="pregunta">
+                        <label for="HoradeComer" class="color-texto">¿Qué momento del día es?</label>
+                        <select id="HoradeComer" style="color: #606060;">
+                            <option value="">--Por favor elige una opción--</option>
+                            <option value="Desayuno">Desayuno</option>
+                            <option value="Merienda">Merienda</option>
+                            <option value="Comida">Comida</option>
+                            <option value="Cena">Cena</option>
+                        </select>
+                    </div>
+            
+                    <div class="pregunta">
+                        <label for="Hambre">¿Tienes mucha hambre?</label>
+                        <select id="Hambre">
+                            <option value="">--Por favor elige una opción--</option>
+                            <option value="yes">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+            
+                    <div class="pregunta">
+                        <label for="Queso">¿Te gusta el queso?</label>
+                        <select id="Queso">
+                            <option value="">--Por favor elige una opción--</option>
+                            <option value="yes">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="pregunta">
+                        <label for="Picante">¿Te gusta la comida picante?</label>
+                        <select id="Picante">
+                            <option value="">--Por favor elige una opción--</option>
+                            <option value="yes">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="pregunta">
+                        <label for="BBQ">¿Te gusta la barbacoa?</label>
+                        <select id="BBQ">
+                            <option value="">--Por favor elige una opción--</option>
+                            <option value="yes">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="pregunta">
+                        <label for="Chocolate">¿Te gusta el chocolate?</label>
+                        <select id="Chocolate">
+                            <option value="">--Por favor elige una opción--</option>
+                            <option value="yes">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="pregunta">
+                        <label for="Tarta">¿Te gustan las tartas?</label>
+                        <select id="Tarta">
+                            <option value="">--Por favor elige una opción--</option>
+                            <option value="yes">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="pregunta">
+                        <label for="Hamburguesas">¿Prefieres hamburguesas o sandwiches?</label>
+                        <select id="Hamburguesas">
+                            <option value="">--Por favor elige una opción--</option>
+                            <option value="burgers">Hamburguesas</option>
+                            <option value="sandwiches">Sandwiches</option>
+                        </select>
+                    </div>
+                    <div class="pregunta">
+                        <label for="Pescado">¿Te gusta el pescado?</label>
+                        <select id="Pescado">
+                            <option value="">--Por favor elige una opción--</option>
+                            <option value="yes">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="pregunta">
+                        <label for="Vegetariano">¿Eres vegetariano/a?</label>
+                        <select id="Vegetariano">
+                            <option value="">--Por favor elige una opción--</option>
+                            <option value="yes">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    
+                    <div class="enviar-formulario">
+                        <button type="button" id="nextButton">Siguiente</button>
+                        <button type="button" id="recommendButton">Recomendar un plato</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <section class="paso" id="menu_infantil">
+            <h4 id="paso_menu_titulo" class="tituloPaso1">MENU INFANTIL.</h4>
+            <h4 id="volver" class="tituloPaso1">Volver.</h4>
+            <div class="contenedor-titulos">
+                <h6 class="titulo-apartado">ENTRANTES.</h6>
+            </div>
+            <div class="contenedor-producto">
+                <div class="producto" data-nombre-producto="Fingers.">
+                    <div class="img-container-product">
+                        <img src="images/img/fingers.png" alt="Fingers.">
+                        <p class="precio-producto">6€</p>
+                    </div>
+                    <h2 class="nombre-producto">Fingers.</h2>
+                    <p class="descripcion-producto">Fingers de pollo Cornflakes con salsa BBQ Chipotle y salsa Mostaza & Miel.Seis unidades.</p>
+                </div>
+
+                <div class="producto" data-nombre-producto="Quesadilla.">
+                    <div class="img-container-product">
+                        <img src="images/img/quesadilla.jpg" alt="Quesadilla.">
+                        <p class="precio-producto">7€</p>
+                    </div>
+                    <h2 class="nombre-producto">Quesadilla.</h2>
+                    <p class="descripcion-producto">Dos tortillas de harina de trigo, jamón York, queso Cheddar fundido, pico de gallo, crema.</p>
+                </div>
+                
+                <div class="producto" data-nombre-producto="Nachos Tex Mex.">
+                    <div class="img-container-product">
+                        <img src="images/img/nachos.jpg" alt="Nachos Tex Mex.">
+                        <p class="precio-producto">6€</p>
+                    </div>
+                    <h2 class="nombre-producto">Nachos Tex Mex.</h2>
+                    <p class="descripcion-producto">Nachos de maíz, mezcla de quesos, cebolla roja, chorizo picado, chiles jalapeños, cilantro y crema agria.</p>
+                </div>
+            </div>
+            <div class="contenedor-titulos">
+                <h6 class="titulo-apartado">PRINCIPALES.</h6>
+            </div>
+            <div class="contenedor-producto">
+                <div class="producto" data-nombre-producto="Chic Chicken.">
+                    <div class="img-container-product">
+                        <img src="images/img/BBQ.png" alt="Chic Chicken.">
+                        <p class="precio-producto">14€</p>
+                    </div>
+                    <h2 class="nombre-producto">Chic Chicken BBQ.</h2>
+                    <p class="descripcion-producto">Pollo crujiente, salsa BBQ chipotle sobre tomate, lechuga, pepinillo y salsa baconesa en pan brioche tostado con dos sésamos.</p>
+                </div>
+                <div class="producto" data-nombre-producto="VIPSClub.">
+                    <div class="img-container-product">
+                        <img src="images/img/VIPSClub.jpg" alt="VIPSClub.">
+                        <p class="precio-producto">10€</p>
+                    </div>
+                    <h2 class="nombre-producto">VIPSClub.</h2>
+                    <p class="descripcion-producto">Pan blanco o pan de semillas, tres pisos de pollo, bacon, jamón York, queso americano y queso, mayonesa, tomate y lechuga.</p>
+                </div>
+                
+                <div class="producto" data-nombre-producto="Pizza Margarita.">
+                    <div class="img-container-product">
+                        <img src="images/img/pizza.png" alt="Pizza Margarita.">
+                        <p class="precio-producto">6€</p>
+                    </div>
+                    <h2 class="nombre-producto">Pizza Margarita</h2>
+                    <p class="descripcion-producto">Queso mozzarella y orégano sobre una base de pan de focaccia con salsa de tomate.</p>
+                </div>
+            </div>
+            <div class="contenedor-titulos">
+                <h6 class="titulo-apartado">POSTRES.</h6>
+            </div>
+            <div class="contenedor-producto">
+                <div class="producto" data-nombre-producto="Batido Oreo.">
+                    <div class="img-container-product">
+                        <img src="images/img/oreo.png" alt="Batido Oreo.">
+                        <p class="precio-producto">14€</p>
+                    </div>
+                    <h2 class="nombre-producto">Batido Oreo.</h2>
+                    <p class="descripcion-producto">Batido de helado de chocolate blanco, galletas Oreo y nata montada VIPS.</p>
+                </div>
+                <div class="producto" data-nombre-producto="TortitasChips.">
+                    <div class="img-container-product">
+                        <img src="images/img/tortitaschips.png" alt="TortitasChips.">
+                        <p class="precio-producto">10€</p>
+                    </div>
+                    <h2 class="nombre-producto">Tortitas Chips.</h2>
+                    <p class="descripcion-producto">Tortitas recién hechas rellenas de Chips Ahoy® y estrellitas de chocolate blanco.</p>
+                </div>
+
+                <div class="producto" data-nombre-producto="Choco&Caramel.">
+                    <div class="img-container-product">
+                        <img src="images/img/tartaa.png" alt="Choco&Caramel.">
+                        <p class="precio-producto">6€</p>
+                    </div>
+                    <h2 class="nombre-producto">Choco&Caramel.</h2>
+                    <p class="descripcion-producto">Esponjoso bizcocho con mousse de caramelo y recubierto de bombón.</p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <div>Síguenos</div>
+            <div class="imagenes">
+                <a href="https://www.instagram.com/envips/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/img/instagram-1.PNG" alt="instagram"/>
+                </a>
+                <a href="https://www.facebook.com/vips?ref=ts" target="_blank" rel="noopener noreferrer">
+                    <img src="images/img/facebook-1.PNG" alt="facebook"/>
+                </a>
+                <a href="https://twitter.com/vips" target="_blank" rel="noopener noreferrer">
+                    <img src="images/img/twitter.PNG" alt="twitter"/>
+                </a>
+                <img src="images/img/youtube-1.PNG" alt=""/>  
+            </div>
+        </div>
+        <div style="margin-left: auto;">
+            <a href="https://www.vips.es/atencion-al-cliente" class="text-wrapper">Atención al cliente
+            </a>  
+        </div>
+      </footer>    
+    <script src="script/carta.js"></script>
+    </body>

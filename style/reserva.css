@@ -1,0 +1,264 @@
+body{
+    --color-rojo: #dd1b2d;
+    --color-blanco: #ffffff;
+    --color-shadow: #00000040;
+    --color-blanco-sucio: #f9f6ef;
+    --color-gris: #cccccc;
+    --border-radius: 10px;
+
+    background-color: var(--color-blanco-sucio);
+    color: var(--color-rojo);
+}
+
+h1 {
+    font-family: "Secular One";
+    font-size: 50px;
+    margin-top: 60px; 
+    text-align: center;
+}
+h2 {
+    font-family: "Secular One";
+    font-size: 40px;
+    margin-top: 60px;
+    text-align: center;
+    color: var(--color-rojo);
+    text-shadow: none;
+}
+
+p{
+    color: var(--color-rojo);
+    font-family: "Secular One";
+    font-size: 25px;
+}
+.boton a{
+    font: "Hahmlet-Black", "Hahmlet";
+}
+.boton_r a{
+    font: "Hahmlet-Black", "Hahmlet";
+}
+.pagina {
+    border-radius: 3px;
+    padding: 10px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around; 
+}
+
+
+.pagina .contacto
+{
+    width: 100%;
+}
+.boton_r {
+    width: 40%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: 2px solid var(--color-blanco);
+    cursor: pointer;
+    font: "Hahmlet-Black", "Hahmlet";
+    background: var(--color-rojo);
+    border-radius: var(--border-radius);
+    text-align: center;
+    text-decoration: none;
+}
+.boton_r:hover {
+    color: var(--color-rojo);
+    border: 2px solid var(--color-rojo);
+    background: var(--color-blanco-sucio);
+}
+
+.boton_r:active {
+    transform: scale(0.9);
+}
+
+.col_t1 {
+    width: 40%; 
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col_t2 {
+    width: 60%; 
+    border-radius: 3px;
+    margin: 10px;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.entrada {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--color-blanco);
+    outline: none;
+    background: var(--color-blanco);
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.entrada:focus {
+    border-color: var(--color-gris);
+}
+
+.contacto {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.contacto ul {
+    display: flex;
+    padding: 0;
+    width: 100%;
+}
+
+.contacto li {
+    width: 100%;
+    list-style: None;
+}
+
+.boton {
+    width: 33%;
+}
+
+#mapa {
+    height: 400px;
+    width: 100%;
+    z-index: 1;
+}
+.boton:nth-child(2){
+    width: 40%;
+}
+#boton_cercano{
+    margin-bottom: 30px;
+}
+.calendar {
+    background: var(--color-blanco);
+    width: 80%;
+    max-width: 600px;
+}
+
+.calendar__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--color-gris);
+    font-weight: bold;
+    text-transform: uppercase;
+ }
+.calendar__prev, .calendar__next {
+    color: var(--color-rojo);
+    cursor: pointer;
+}
+
+.calendar__prev {
+    margin-right: auto; 
+}
+
+.calendar__next {
+    margin-left: auto; 
+}
+
+.calendar__week, .calendar__dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px; 
+}
+
+.calendar__month, .calendar__year {
+    padding: 5px; 
+    font-size: 20px;
+}
+
+.calendar__item {
+    text-align: center;
+    line-height: 2; 
+}
+.calendar__today {
+    background: lightcoral;
+    color: white;
+    width: 50%;
+    border-radius: 50%;
+    margin: auto; 
+}
+
+.calendar__last-days {
+    opacity: .3; 
+}
+.calendar__past {
+    color: black;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 1178px){
+    h1{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 600px){
+    .col_t1, .col_t2{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        display: block;
+        z-index: 3;
+    }
+    h1{
+        margin-top: 60px;
+    }
+    .navbar{
+        z-index: 2;
+    }
+    .navbar-inner{
+        display: none;
+    }
+    .pagina{
+        flex-wrap: wrap;
+    }
+    .col_t1, .col_t2{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #mapa{
+        z-index: 1;
+    }
+    .boton:nth-child(2){
+        width: 100%;
+    }
+}
+
+.label_input {
+    color: var(--color-rojo);
+    font-family: "Secular One";
+    font-size: 25px;
+}
+
+label{
+    color: var(--color-rojo);
+    font-family: "Secular One";
+    font-size: 25px;
+}

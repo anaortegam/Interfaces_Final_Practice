@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/reserva.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200&family=Hahmlet:wght@300&family=Orbitron:wght@500;600&family=Purple+Purse&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <title>Reserva</title>
+</head>
+<body>
+    <script src="script/reserva.js"></script>
+    <div class="container">
+        <label for="btn-menu-open" class="icono-menu"> ☰</label>
+    </div>
+    <input type="checkbox" id="btn-menu-open" aria-label="Abrir menú">
+    <div class ="container-menu">
+        <div class = "cont-menu">
+            <nav>
+                <a href=inicio.html>Inicio</a> 
+                <a href="carrito_vips.html">Pedido a domicilio</a>               
+                <a href="carta_vips.html">Carta</a>
+                <a href="login.html">Iniciar sesión</a>
+                <a href="register.html">Registro de usuarios</a>    
+            </nav>
+            <label for="btn-menu-close" class="icon-equis">✖️</label>
+        </div>
+    </div>
+    <input type="checkbox" id="btn-menu-close">
+    <div class="navbar">
+        <img src="images/img/VIPS-1.png" alt="VIPS">
+        <div class="navbar-inner">
+            <a href=inicio.html>Inicio</a> 
+            <a href="carrito_vips.html">Pedido a domicilio</a>               
+            <a href="carta_vips.html">Carta</a>
+            <a href="login.html">Iniciar sesión</a>
+            <a href="register.html">Registro de usuarios</a>    
+        </div>
+    </div>
+    <section>
+        <h1>¡Estás haciendo tu reserva!</h1>
+    </section> 
+    <div class="pagina">
+        <div class="col_t1">
+            <label for="direccion">¿Dónde quieres reservar?</label>
+            <input type="text" class="entrada" id="direccion"  placeholder="Introduce direccion o selcciona en el mapa">
+            <label for="numeroPersonas">¿Cuántas personas sois?</label>
+            <input type="text" class="entrada" id="numeroPersonas"  placeholder="¿Cuántas personas sois?">
+            <label>¿Qué día quieres reservar?</label>
+            
+            <div class="calendar">
+                <div class="calendar__info">
+                    <div class="calendar__prev" id="prev-month" style="color: #000000;">&#9664;</div>
+                    <div class="calendar__month" id="month"></div>
+                    <div class="calendar__year" id="year"></div>
+                    <div class="calendar__next" id="next-month" style="color: #000000;">&#9654;</div>
+                </div>
+            
+                <div class="calendar__week">
+                    <div class="calendar__day calendar__item">L</div>
+                    <div class="calendar__day calendar__item">M</div>
+                    <div class="calendar__day calendar__item">X</div>
+                    <div class="calendar__day calendar__item">J</div>
+                    <div class="calendar__day calendar__item">V</div>
+                    <div class="calendar__day calendar__item">S</div>
+                    <div class="calendar__day calendar__item">D</div>
+                </div>
+            
+                <div class="calendar__dates" id="dates"></div>
+            </div>
+            <label for="hora">¿A qué hora quieres venir?</label>
+            <input type="text" class="entrada" id="hora"  placeholder="HH:MM">
+        </div>
+        <div class="col_t2">
+            <label for="boton_cercano">¿Quieres encontrar tu restaurante más cercano?</label>
+            <button class = "boton" id="boton_cercano">Mostrar restaurante más cercano</button>
+            <div id="mapa"></div>
+        </div>
+    </div>
+    <h2>Información de contacto</h2>
+    <div class="contacto">
+        <ul>
+            <li>
+                <label for="nombre">Nombre completo</label>
+            </li>
+            <li>
+                <label for="telefono">Número de teléfono</label>
+            </li>
+            <li>
+                <label for="email">Correo electrónico</label>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <input type="text" class="entrada" id="nombre"  placeholder="Introduce nombre completo">
+            </li>
+            <li>
+                <input type="text" class="entrada" id="telefono"  placeholder="Introduce número de teléfono">
+            </li>
+            <li>
+                <input type="text" class="entrada" id="email"  placeholder="Introduce correo electrónico">
+            </li>
+        </ul>
+        <button class="boton"  id="enviar" type="submit">Confirmar reserva</button>
+    </div>
+    <footer class="footer">
+        <div>
+            <div>Síguenos</div>
+            <div class="imagenes">
+                <a href="https://www.instagram.com/envips/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/img/instagram-1.PNG" alt="instagram"/>
+                </a>
+                <a href="https://www.facebook.com/vips?ref=ts" target="_blank" rel="noopener noreferrer">
+                    <img src="images/img/facebook-1.PNG" alt="facebook"/>
+                </a>
+                <a href="https://twitter.com/vips" target="_blank" rel="noopener noreferrer">
+                    <img src="images/img/twitter.PNG" alt="twitter"/>
+                </a>
+                <img src="images/img/youtube-1.PNG" alt="youtube"/>  
+            </div>
+        </div>
+        <div style="margin-left: auto;">
+            <a href="https://www.vips.es/atencion-al-cliente" class="text-wrapper">Atención al cliente
+            </a>  
+        </div>
+      </footer>
+      <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+</body>
+</html>

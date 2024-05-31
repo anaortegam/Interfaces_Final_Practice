@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIPS - inicio de sesión</title>
+    <link href="style/index.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <script src="script/usuarios.js"></script>
+</head>
+<body>
+    <div class="container">
+    <label for="btn-menu-open" class="icono-menu"> ☰</label>
+    </div>
+    <input type="checkbox" id="btn-menu-open" aria-label="Abrir menú">
+    <div class ="container-menu">
+        <div class = "cont-menu">
+            <nav>
+                <a href="inicio.html">Inicio</a>
+                <a href="register.html">Registro de usuarios</a>
+                <a href=reserva.html >Reservar</a>
+                <a href=carrito_vips.html>Pedido a domicilio</a>
+                <a href="carta_vips.html">Carta</a> 
+            </nav>
+            <label for="btn-menu-close" class="icon-equis">✖️</label>
+        </div>
+    </div>
+    <input type="checkbox" id="btn-menu-close">
+    <div class="navbar">
+        <img src="images/img/VIPS-1.png" alt="VIPS">
+        <div class="navbar-inner">
+            <a href="inicio.html">Inicio</a>
+            <a href="register.html">Registro de usuarios</a>
+            <a href=reserva.html >Reservar</a>
+            <a href=carrito_vips.html>Pedido a domicilio</a>
+            <a href="carta_vips.html">Carta</a>     
+        </div>
+    </div>
+    <section class="centro">
+      <h2>Login de Usuarios</h2>
+      <form class="formulario" name="login" method="get">
+          <label for="email_l">Correo electrónico:</label>
+              <input type="text" id="email_l" name="email" placeholder="Introduce el Correo electrónico."><br>
+          <label for="contrasena_l">Contraseña:</label>
+              <input type="password" id="contrasena_l" name="cpntrasena" placeholder="Introduce la Contraseña."><br>
+          <input type="button" value="Enviar" class="boton" onclick="validarLogin()">
+          <input type="button" value="Cancelar" class="boton" onclick="inicio()">
+          <input type="button" value="Registrarse" class="boton" onclick="register()">
+      </form>
+    </section>
+    <footer class="footer">
+    <div>
+        <div>Síguenos</div>
+        <div class="imagenes">
+            <a href="https://www.instagram.com/envips/" target="_blank" rel="noopener noreferrer">
+                <img src="images/img/instagram-1.PNG" alt="instagram"/>
+            </a>
+            <a href="https://www.facebook.com/vips?ref=ts" target="_blank" rel="noopener noreferrer">
+                <img src="images/img/facebook-1.PNG" alt="facebook"/>
+            </a>
+            <a href="https://twitter.com/vips" target="_blank" rel="noopener noreferrer">
+                <img src="images/img/twitter.PNG" alt="twitter"/>
+            </a>
+            <img src="images/img/youtube-1.PNG" alt="youtube"/>  
+        </div>
+    </div>
+    <div style="margin-left: auto;">
+        <a href="https://www.vips.es/atencion-al-cliente" class="text-wrapper">Atención al cliente
+        </a>  
+    </div>
+  </footer>
+</body>
+</html>
